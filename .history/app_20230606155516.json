@@ -1,0 +1,21 @@
+{
+  "expo": {
+    "android": {
+      "permissions": ["INTERNET"]
+    },
+    "plugins": [
+      [
+        "expo-av",
+        {
+          "microphonePermission": "Allow $(PRODUCT_NAME) to access your microphone."
+        }
+      ]
+    ],
+    "scheme": "acme",
+    "web": {
+      "bundler": "metro"
+    },
+    "name": "StackOverflow",
+    "slug": "StackOverflow"
+  }
+}
