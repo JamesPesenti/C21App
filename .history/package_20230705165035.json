@@ -1,7 +1,4 @@
 {
-  "name": "PedroRealEstateDraft",
-  "version": "1.0.0",
-  "private": true
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
@@ -33,4 +30,7 @@
     "@babel/plugin-proposal-export-namespace-from": "^7.18.9",
     "metro-react-native-babel-preset": "^0.76.6"
   },
+  "name": "PedroRealEstateDraft",
+  "version": "1.0.0",
+  "private": true
 }
