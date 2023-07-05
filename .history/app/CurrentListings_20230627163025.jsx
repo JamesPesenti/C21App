@@ -1,6 +1,6 @@
-import { StyleSheet, Image, TouchableOpacity, Text, View } from 'react-native'
+import { ScrollView, StyleSheet, Image, TouchableOpacity, Text, View } from 'react-native'
 import { Link, useRouter } from "expo-router"
-import currentListings from '../../assets/currentListings'
+import soldProperties from "../assets/soldProperties"
 
 const CurrentListings = () => {
 
@@ -8,14 +8,18 @@ const CurrentListings = () => {
 
   return (
     <>
-       <View style={{ justifyContent: 'center', alignItems: 'center', textAlign: 'center' }}>
-         <Image 
-            style={{ resizeMode: "cover", width: 180, height: 100}}
+       <ScrollView
+         horizontal
+         showsHorizontalScrollIndicator={false} 
+         contentContainerStyle={styles.container}
+       >
+         {/* <Image 
+            style={{ marginTop: 50, resizeMode: "cover", width: 180, height: 100}}
             source={{ uri: "https://d2b3iji0rbl31y.cloudfront.net/Century_21_Redwood_RW07_6X24_204_.png" }}
-         /> 
-            {/* <Text style={{ marginTop: 40, fontSize: 30, color: 'bronze' }}>Just Sold</Text> */}
+         />  */}
+         <Text style={{ marginTop: 40, fontSize: 30, color: 'bronze' }}>Current Listings</Text>
            <View style={styles.imageContainer}>
-              {currentListings.map((item) => {
+              {soldProperties.map((item) => {
                  return (
                   <>
                   <TouchableOpacity
@@ -24,7 +28,7 @@ const CurrentListings = () => {
                      onPress={() => router.push("/searchHomes")}
                   >
                      <Image
-                        style={{ marginHorizontal: 5, borderRadius: 5, resizeMode: "cover", marginTop: 20, height: 120, width: 150}}
+                        style={{ marginHorizontal: 5, borderRadius: 5, resizeMode: "cover", marginTop: 20, height: 180, width: 200}}
                         source={item.image}
                      />
                       <Text style={{marginLeft: 0, fontSize: 10, fontWeight: "bold"}}>{item.address}</Text>
@@ -40,7 +44,7 @@ const CurrentListings = () => {
                   <Text style={{fontSize: 18, color: "white"}}>For Sale</Text>
                 </View> */}
            </View>
-        </View>
+        </ScrollView>
     </>
   )
 }
@@ -48,6 +52,13 @@ const CurrentListings = () => {
 export default CurrentListings
 
 const styles = StyleSheet.create({
+   container: {
+      justifyContent: 'center', 
+      alignItems: 'center', 
+      textAlign: 'center',
+      backgroundColor: "white",
+      paddingHorizontal: 20
+   },
    imageContainer: {
       width: '100%',
       display: 'flex',
@@ -55,9 +66,9 @@ const styles = StyleSheet.create({
       flexWrap: 'wrap',
       justifyContent: 'center',
       alignItems: 'center',
-      marginTop: 16,
       textAlign: "center",
       color: "white",
+      backgroundColor: "white"
   },
    priceContainer: {
       position: "absolute",
