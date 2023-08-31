@@ -1,4 +1,5 @@
 I built this website using React Native Web with Expo Router. It features-
+
 • File-based navigation bar 
 • Screen to display the realtor's current homes for sale 
 • Navigation to link the user to the IDX(Internet Data Exchange) on Century 21's website
