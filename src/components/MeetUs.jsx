@@ -10,7 +10,7 @@ const MeetUs = () => {
           <View style={styles.imageWrapper}>
             <Image 
               style={styles.pedroPic}
-              source={{ uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT05OCLMJC6OESBHckcBPMwyWA_6HQvqT-Ehg&usqp=CAU"}}
+              source={{ uri: "https://github.com/JamesPesenti/C21App/assets/74566532/b09145e1-9fd2-4ca5-b48d-146faa6b7936"}}
             />
                <Text style={{fontSize: 20}}>Pedro</Text>
             <View style={styles.reviewReferContainer}>
