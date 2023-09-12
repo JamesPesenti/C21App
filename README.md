@@ -8,4 +8,6 @@ I built this website using React Native Web with Expo Router. It features-
 
 • A section that displays past customer reviews
 
-My friend asked me to build him a realtor website for him, and I agreed despite the fact that I was a little rusty with web development since I started primarily working with React Native. But after reading the docs I realized I could build a web app fully using RN for a seamless development experience.
+
+![266401738-d4873af8-f7c2-4dcf-99a7-31f5d4375d43](https://github.com/JamesPesenti/C21App/assets/74566532/165be9b0-ae0c-4650-a74a-7e4f1af0a46b)
+
